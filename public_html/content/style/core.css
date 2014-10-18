@@ -28,7 +28,7 @@ a:hover {
 html,
 body {
     height: 100%;
-    background:#fcd1a6 URL('/content/bg.jpg') repeat top left scroll;
+    background:#fcd1a6 URL('../bg.jpg') repeat top left scroll;
 }
 body {
     color: #fff;
@@ -39,18 +39,36 @@ h1,h2,h3,h4{
     color: #ff6666;
 }
 
+/* id's special to each page */
+#index .site-wrapper-inner {
+    background: transparent URL('../index.png') no-repeat bottom right;
+}
+#a-empresa .site-wrapper-inner {
+    background: transparent URL('../a-empresa.png') no-repeat bottom right;
+}
+#contato .site-wrapper-inner {
+    background: transparent URL('../contato.png') no-repeat bottom right;
+}
+#nossos-produtos .site-wrapper-inner {
+    background: transparent URL('../nossos-produtos.png') no-repeat bottom right;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
     display: table;
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.3);
 }
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
+}
+.site-wrapper-inner .inner strong,
+.site-wrapper-inner .inner a {
+    color:#ff6666;
 }
 .cover-container {
     margin-right: auto;
@@ -84,8 +102,8 @@ h1,h2,h3,h4{
     padding-left: 0;
     font-size: 16px;
     font-weight: bold;
-    /*color: #fff; *//* IE8 proofing */
-    /*color: rgba(255,255,255,.75);*/
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.90);
     border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
